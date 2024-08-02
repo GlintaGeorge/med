@@ -78,10 +78,10 @@ const OTPForm: React.FC = () => {
     <div>
       <div className="flex items-center justify-center h-screen">
         <div className="w-96 p-8 bg-gray-300 rounded-lg shadow-lg">
-          <h2 className="font-extrabold text-blue-900 text-3xl ml-20 mb-2">
+          <h2 className="font-extrabold text-fuchsia-900 text-3xl ml-20 mb-2">
             Verify OTP
           </h2>
-          <p className="mt-2 text-xs text-blue-900 ml-12 mb-6">
+          <p className="mt-2 text-xs text-fuchsia-900 ml-12 mb-6">
             Please enter the OTP that we send to the mail{" "}
           </p>
           <form onSubmit={formik.handleSubmit}>
@@ -90,7 +90,7 @@ const OTPForm: React.FC = () => {
               <input
                 type="text"
                 id="otp"
-                className=" mb-4 mt-3 w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500"
+                className=" mb-4 mt-3 w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-fuchsia-500"
                 placeholder="Enter verification code"
                 {...formik.getFieldProps("otp")}
               />
@@ -100,13 +100,13 @@ const OTPForm: React.FC = () => {
             </div>
             <button
               type="submit"
-              className="bg-blue-900 ml-28 mt-3 hover:bg-blue-800 text-white font-bold py-2 px-6 rounded-lg focus:outline-none focus:shadow-outline"
+              className="bg-fuchsia-900 ml-28 mt-3 hover:bg-fuchsia-800 text-white font-bold py-2 px-6 rounded-lg focus:outline-none focus:shadow-outline"
             >
               Verify
             </button>
             <p className="mt-3 ml-20 text-xs text-gray-700">
               Didn't receive OTP?{" "}
-              <button className="text-blue-500 underline focus:outline-none hover:text-blue-700"
+              <button className="text-fuchsia-500 underline focus:outline-none hover:text-fuchsia-700"
               onClick={resendCode}
               disabled={seconds !== 0} 
               >

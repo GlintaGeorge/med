@@ -96,10 +96,13 @@ const Body: React.FC = () => {
         </div>
 
         {/* Doctors Section */}
-        <h1 className="text-2xl text-fuchsia-800 font-bold mb-5">Our Doctors</h1>
+        {/* <h1 className="text-2xl text-fuchsia-800 font-bold mb-5">Our Doctors</h1> */}
         {/* Doctor Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {doctors.map((doctor) => (
+            <>
+        <h1 className="text-2xl text-fuchsia-800 font-bold mb-5">Our Doctors</h1>
+
             <Link to="/doctors" key={doctor._id}>
               <div className="shadow-md rounded-lg p-6 cursor-pointer flex flex-col justify-center items-center bg-fuchsia-100 hover:bg-fuchsia-100 transition-transform duration-300 hover:scale-105">
                 <img
@@ -115,6 +118,7 @@ const Body: React.FC = () => {
                 </p>
               </div>
             </Link>
+            </>
           ))}
         </div>
       </div>

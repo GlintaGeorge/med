@@ -194,7 +194,7 @@ const AppointmentDetails: React.FC = () => {
                   <h2 className="text-2xl font-bold">
                     {doctorDetails.doctorName}
                   </h2>
-                  <p>{doctorDetails.department}</p>
+                  
                   <p className="text-green-600 font-semibold">Verified</p>
                   <div className="flex">
                     <button
